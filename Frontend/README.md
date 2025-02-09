@@ -57,28 +57,63 @@ npm run build
 
 ############################################################################################################
 #############################################################################################################
-🔹 Frontend
-    📌 เทคโนโลยีที่ใช้
-        UI Framework: Quasar Framework
-        Frontend Framework: Vue.js 3
-        Build Tool: Vite
-    เอกสารอ้างอิง:
-        Quasar Framework + Vite Plugin https://quasar.dev/start/vite-plugin
-        Vue.js 3 Quick Start https://vuejs.org/guide/quick-start.html
+# 🚀 ระบบร้านขายรองเท้า (Shoe Store System)
 
-   📌 คำสั่งติดตั้ง     
-         ```sh
-        cd Frontend  # เข้าไปยังโฟลเดอร์ Frontend
-        npm create vue@latest  # สร้างโปรเจค Vue.js ล่าสุด
-        npm i  # ติดตั้งแพ็กเกจทั้งหมด
-        npm install --save quasar @quasar/extras  # ติดตั้ง Quasar และ Extras
-        npm install --save-dev @quasar/vite-plugin sass-embedded@^1.80.2  # ติดตั้ง Quasar Vite Plugin และ SASS Embedded   
-        ```
-      
-    ⚠️ กรณีเกิดปัญหาในการติดตั้งแพ็กเกจ
-         ```sh
-        Remove-Item -Recurse -Force node_modules  # ลบโฟลเดอร์ node_modules
-        Remove-Item -Force package-lock.json  # ลบไฟล์ package-lock.json
-        npm i  # ติดตั้งแพ็กเกจใหม่
-        npm run dev  # รันเซิร์ฟเวอร์ frontend
-        ```
+![Node.js](https://img.shields.io/badge/Node.js-18+-brightgreen) ![Express.js](https://img.shields.io/badge/Express.js-API-blue) ![Vue.js](https://img.shields.io/badge/Vue.js-3-green) ![Quasar](https://img.shields.io/badge/Quasar-Framework-orange)
+
+---
+
+## 📌 เทคโนโลยีที่ใช้ในโปรเจค
+| หมวดหมู่ | เทคโนโลยีที่ใช้ |
+|----------|----------------|
+| **Backend** | Express.js (API), Prisma (ORM) |
+| **Frontend** | Vue.js 3 + Quasar Framework |
+| **Database** | PostgreSQL / MySQL (ใช้ร่วมกับ Prisma) |
+| **Tooling** | VS Code, Git, Postman, Nodemon |
+
+---
+
+## ⚙️ การติดตั้งระบบ
+
+### 🛠 **Backend**
+1. **ติดตั้ง Node.js & Git**
+    ```sh
+    npx node -y
+    npx git -y
+    ```
+2. **ตั้งค่า Prisma และฐานข้อมูล**
+    ```sh
+    npx prisma db pull    # ดึงโครงสร้างฐานข้อมูล
+    npx prisma generate   # สร้าง Prisma Client
+    npx prisma migrate dev --name update_customers_schema  # สร้าง Migration
+    ```
+3. **รันเซิร์ฟเวอร์**
+    ```sh
+    npx nodemon start
+    ```
+
+---
+
+### 🎨 **Frontend**
+1. **ติดตั้ง Vue.js 3 และ Quasar Framework**
+    ```sh
+    cd Frontend
+    npm create vue@latest
+    npm i
+    npm install --save quasar @quasar/extras
+    npm install --save-dev @quasar/vite-plugin sass-embedded@^1.80.2
+    ```
+2. **รันเซิร์ฟเวอร์**
+    ```sh
+    npm run dev
+    ```
+
+---
+
+## ❌ แก้ไขปัญหาการติดตั้ง
+หากพบปัญหาเกี่ยวกับ `node_modules` หรือ `package-lock.json` สามารถแก้ไขได้โดย:
+```sh
+Remove-Item -Recurse -Force node_modules
+Remove-Item -Force package-lock.json
+npm i
+npm run dev
