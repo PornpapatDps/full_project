@@ -1,23 +1,45 @@
-backend :
-    frame-work ใช้สร้าง API : Express.js
-    frame-work DB ORM : Prisma
-    tool : 
-        tool program: vs-code 
-        tool ดูและจัดการDB : dbvear 
-        tool ควบคุมเวอร์ชั่น : git 
-        tool Testing ทดสอบ API : Postman 
-        tool Debug และ Monitor : Nodemon, Node.js, Prisma
-คำสั่งติดตั้ง 
-    npx nodemon -y ติดตั้งทั้งหมด หรือ npx nodemon i
-    npx node -y 
-    npx git -y 
-    npx prisma db pull
-    npx prisma generate
-    npx prisma migrate dev --name update_customers_schema
-    npx nodemon no start
--------------------------------------------------------
+    Backend
+        📌 เทคโนโลยีที่ใช้
+        Framework 
+            สำหรับสร้าง API: Express.js
+            ORM สำหรับจัดการฐานข้อมูล: Prisma
+            
+        เครื่องมือที่ใช้ในระบบ:
+            Editor & IDE: VS Code
+            เครื่องมือดูและจัดการฐานข้อมูล: DBVear
+            ระบบควบคุมเวอร์ชัน: Git
+            เครื่องมือทดสอบ API: Postman
+            เครื่องมือ Debug และ Monitor: Nodemon, Node.js, Prisma
 
-frontend :
-npm init vue@latet
-npm i 
-npm 
+        📌 คำสั่งติดตั้ง
+            npx nodemon -y  # ติดตั้ง Nodemon
+            npx node -y  # ติดตั้ง Node.js
+            npx git -y  # ติดตั้ง Git
+            npx prisma db pull  # ดึงข้อมูลโครงสร้างจากฐานข้อมูล
+            npx prisma generate  # สร้าง Client ของ Prisma
+            npx prisma migrate dev --name update_customers_schema  # สร้าง Migration
+            npx nodemon no start  # เริ่มต้นเซิร์ฟเวอร์ (มีข้อผิดพลาด คำสั่งที่ถูกต้องคือ `npx nodemon start`)
+
+############################################################################################################
+#############################################################################################################
+🔹 Frontend
+    📌 เทคโนโลยีที่ใช้
+        UI Framework: Quasar Framework
+        Frontend Framework: Vue.js 3
+        Build Tool: Vite
+    เอกสารอ้างอิง:
+        Quasar Framework + Vite Plugin https://quasar.dev/start/vite-plugin
+        Vue.js 3 Quick Start https://vuejs.org/guide/quick-start.html
+
+   📌 คำสั่งติดตั้ง     
+        cd Frontend  # เข้าไปยังโฟลเดอร์ Frontend
+        npm create vue@latest  # สร้างโปรเจค Vue.js ล่าสุด
+        npm i  # ติดตั้งแพ็กเกจทั้งหมด
+        npm install --save quasar @quasar/extras  # ติดตั้ง Quasar และ Extras
+        npm install --save-dev @quasar/vite-plugin sass-embedded@^1.80.2  # ติดตั้ง Quasar Vite Plugin และ SASS Embedded   
+
+    ⚠️ กรณีเกิดปัญหาในการติดตั้งแพ็กเกจ
+        Remove-Item -Recurse -Force node_modules  # ลบโฟลเดอร์ node_modules
+        Remove-Item -Force package-lock.json  # ลบไฟล์ package-lock.json
+        npm i  # ติดตั้งแพ็กเกจใหม่
+        npm run dev  # รันเซิร์ฟเวอร์ frontend
