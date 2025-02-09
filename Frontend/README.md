@@ -44,6 +44,7 @@ npm run build
             เครื่องมือ Debug และ Monitor: Nodemon, Node.js, Prisma
 
         📌 คำสั่งติดตั้ง
+            cd backend  # เข้าไปยังโฟลเดอร์ Frontend
             npx nodemon -y  # ติดตั้ง Nodemon
             npx node -y  # ติดตั้ง Node.js
             npx git -y  # ติดตั้ง Git
