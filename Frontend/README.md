@@ -44,7 +44,7 @@ npm run build
             เครื่องมือ Debug และ Monitor: Nodemon, Node.js, Prisma
 
         📌 คำสั่งติดตั้ง
-        ```sh
+            ```sh
             cd backend  # เข้าไปยังโฟลเดอร์ Frontend
             npx nodemon -y  # ติดตั้ง Nodemon
             npx node -y  # ติดตั้ง Node.js
@@ -67,17 +67,18 @@ npm run build
         Vue.js 3 Quick Start https://vuejs.org/guide/quick-start.html
 
    📌 คำสั่งติดตั้ง     
-    ```sh
+         ```sh
         cd Frontend  # เข้าไปยังโฟลเดอร์ Frontend
         npm create vue@latest  # สร้างโปรเจค Vue.js ล่าสุด
         npm i  # ติดตั้งแพ็กเกจทั้งหมด
         npm install --save quasar @quasar/extras  # ติดตั้ง Quasar และ Extras
         npm install --save-dev @quasar/vite-plugin sass-embedded@^1.80.2  # ติดตั้ง Quasar Vite Plugin และ SASS Embedded   
- ```
- ```sh
+        ```
+      
     ⚠️ กรณีเกิดปัญหาในการติดตั้งแพ็กเกจ
+         ```sh
         Remove-Item -Recurse -Force node_modules  # ลบโฟลเดอร์ node_modules
         Remove-Item -Force package-lock.json  # ลบไฟล์ package-lock.json
         npm i  # ติดตั้งแพ็กเกจใหม่
         npm run dev  # รันเซิร์ฟเวอร์ frontend
-```
+        ```
