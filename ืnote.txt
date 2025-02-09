@@ -1,0 +1,23 @@
+backend :
+    frame-work ใช้สร้าง API : Express.js
+    frame-work DB ORM : Prisma
+    tool : 
+        tool program: vs-code 
+        tool ดูและจัดการDB : dbvear 
+        tool ควบคุมเวอร์ชั่น : git 
+        tool Testing ทดสอบ API : Postman 
+        tool Debug และ Monitor : Nodemon, Node.js, Prisma
+คำสั่งติดตั้ง 
+    npx nodemon -y ติดตั้งทั้งหมด หรือ npx nodemon i
+    npx node -y 
+    npx git -y 
+    npx prisma db pull
+    npx prisma generate
+    npx prisma migrate dev --name update_customers_schema
+    npx nodemon no start
+-------------------------------------------------------
+
+frontend :
+npm init vue@latet
+npm i 
+npm 
