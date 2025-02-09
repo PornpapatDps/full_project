@@ -70,25 +70,23 @@ const deleteCustomer = async (req, res) => {
 }
 }
 // get a customer by id
-const getCustomer = async (req, res) => { //ดึงข้อมูลลูกค้า ตาม id
+const getCustomer = async (req, res) => {
     const id = req.params.id;
     try {
-        const cust = await prisma.customers.findUnique({ //ค้นหาข้อมูลลูกค้า
+        const cust = await prisma.customers.findUnique({
             where: {
                 customer_id: Number(id),
             },
         });
         if (!cust) {
-            return res.status(404).json({message: `Customer not found`});
-        }else {
-            res.status(200).json(cust); //ส่งข้อมูลลูกค้า
+            return res.status(404).json({ message: `Customer not found` });
         }
-        res.json(cust);
+        res.status(200).json(cust); //ส่งข้อมูลลูกค้า
     } catch (err) {
         console.error('Get user error:', err);
         res.status(500).json(err);
     }
-}
+};
 // update a customer by id
 const updateCustomer = async (req, res) => {
     const {first_name, last_name, email, address, phone_number} = req.body;
