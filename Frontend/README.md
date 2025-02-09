@@ -59,7 +59,7 @@ npm run build
 #############################################################################################################
 # 🚀 ระบบร้านขายรองเท้า (Shoe Store System)
 
-![Node.js](https://img.shields.io/badge/Node.js-18+-brightgreen) ![Express.js](https://img.shields.io/badge/Express.js-API-blue) ![Vue.js](https://img.shields.io/badge/Vue.js-3-green) ![Quasar](https://img.shields.io/badge/Quasar-Framework-orange)
+![Node.js](-) ![Express.js](-) ![Vue.js]([https://img.shields.io/badge/Vue.js-3-green](https://vuejs.org/guide/quick-start.html)) ![Quasar]([https://img.shields.io/badge/Quasar-Framework-orange](https://quasar.dev/start/vite-plugin))
 
 ---
 
