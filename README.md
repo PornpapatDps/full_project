@@ -12,7 +12,6 @@
             เครื่องมือ Debug และ Monitor: Nodemon, Node.js, Prisma
 
         📌 คำสั่งติดตั้ง
-        `
             npx nodemon -y  # ติดตั้ง Nodemon
             npx node -y  # ติดตั้ง Node.js
             npx git -y  # ติดตั้ง Git
@@ -37,7 +36,7 @@
         npm create vue@latest  # สร้างโปรเจค Vue.js ล่าสุด
         npm i  # ติดตั้งแพ็กเกจทั้งหมด
         npm install --save quasar @quasar/extras  # ติดตั้ง Quasar และ Extras
-        npm install --save-dev @quasar/vite-plugin sass-embedded@^1.80.2  # ติดตั้ง Quasar Vite Plugin และ SASS Embedded`
+        npm install --save-dev @quasar/vite-plugin sass-embedded@^1.80.2  # ติดตั้ง Quasar Vite Plugin และ SASS Embedded
 
     ⚠️ กรณีเกิดปัญหาในการติดตั้งแพ็กเกจ
         Remove-Item -Recurse -Force node_modules  # ลบโฟลเดอร์ node_modules
